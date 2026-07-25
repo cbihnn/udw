@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 02</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:white;
+    }
+
+    .container{
+        width:900px;
+        margin:30px auto;
+    }
+
+    h1{
+        text-align:center;
+        font-size:32px;
+        margin-bottom:20px;
+        font-weight:bold;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+        background:#fff;
+        box-shadow:0 0 10px solid black;
+    }
+
+    th{
+        background:lightpink;
+        color:white;
+        padding:12px;
+        font-size:16px;
+        border: 1px solid #ddd;
+    }
+
+    td{
+        padding:12px;
+        border-bottom:1px solid #ddd;
+        border: 1px solid #ddd;
+    }
+
+    tr:nth-child(even){
+        background:#f5f5f5;
+    }
+
+    .form-box{
+        width:500px;
+        margin:40px auto;
+        background:white;
+        padding:30px;
+        border-radius:10px;
+        box-shadow:0 0 15px solid black;
+    }
+
+    .form-box h2{
+        text-align:center;
+        margin-bottom:25px;
+        color:darkgray;
+    }
+
+    label{
+        display:block;
+        margin-top:15px;
+        margin-bottom:5px;
+        font-weight:bold;
+    }
+
+    input,
+    select,
+    textarea{
+        width:100%;
+        padding:10px;
+        border:1px solid #ccc;
+        border-radius:4px;
+        font-size:15px;
+    }
+
+    textarea{
+        resize:none;
+        height:80px;
+    }
+
+    button{
+        width:100%;
+        margin-top:20px;
+        padding:12px;
+        background:#2d8fe2;
+        color:white;
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+        font-size:16px;
+    }
+
+    button:hover{
+        background:#1d73bb;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>CÁC SỰ KIỆN TRONG THÁNG 12/2025</h1>
+
+    <table>
+        <tr>
+            <th>SỰ KIỆN</th>
+            <th>ĐỊA ĐIỂM</th>
+            <th>THỜI GIAN</th>
+        </tr>
+
+        <tr>
+            <td>Hội thi tay nghề điều khắc</td>
+            <td>Tây Ninh</td>
+            <td>Từ ngày 01-04 tháng 12/2015</td>
+        </tr>
+
+        <tr>
+            <td>Triển lãm tranh sơn mài</td>
+            <td>Bình Dương</td>
+            <td>Từ ngày 10-15 tháng 12/2015</td>
+        </tr>
+
+        <tr>
+            <td>Hội thi bánh dân gian Nam Bộ</td>
+            <td>Vĩnh Long</td>
+            <td>Từ ngày 15-20 tháng 12/2015</td>
+        </tr>
+
+        <tr>
+            <td>Hội thi văn nghệ quần chúng</td>
+            <td>Thành phố Hồ Chí Minh</td>
+            <td>Từ ngày 25-30 tháng 12/2015</td>
+        </tr>
+
+    </table>
+
+    <div class="form-box">
+
+        <h2>Đăng ký tham gia sự kiện</h2>
+
+        <form>
+
+            <label>Họ và tên</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Số điện thoại</label>
+            <input type="text">
+
+            <label>Chọn sự kiện</label>
+
+            <select>
+                <option>-- Chọn sự kiện --</option>
+                <option>Hội thi tay nghề điều khắc</option>
+                <option>Triển lãm tranh sơn mài</option>
+                <option>Hội thi bánh dân gian Nam Bộ</option>
+                <option>Hội thi văn nghệ quần chúng</option>
+            </select>
+
+            <label>Ghi chú thêm</label>
+            <textarea></textarea>
+
+            <button type="submit">Đăng ký ngay</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
